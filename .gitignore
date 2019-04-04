@@ -11,9 +11,9 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 
 # Eclipse gitignore
-.metadata
-bin/
-tmp/
+/.metadata
+/bin/
+/tmp/
 *.tmp
 *.bak
 *.swp
