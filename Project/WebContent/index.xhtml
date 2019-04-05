@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" 
+				xmlns:f="http://java.sun.com/jsf/core" 
+				xmlns:h="http://java.sun.com/jsf/html">
+	<h:head>
+	    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" http-equiv="X-UA-Conpatible" />
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	    
+    	<title>Phone-book</title>
+	</h:head>
+	<h:body>
+		<center><h1>Phone Catalog</h1></center>
+		<h:form>
+			<table>
+				<tr>
+					<td><label>Name: </label></td>
+					<td><h:inputText id="name" value="#{user.name}"></h:inputText></td>
+				</tr>
+				<tr>
+					<td><label>Phone number: </label></td>
+					<td><h:inputText id="number" value="{user.phoneNumber}"></h:inputText></td>
+				</tr>
+				<tr>
+					<td colspan="2"><h:commandButton action="#{CatalogManager.addUser(user.name, user.phoneNumber)}" value="Add User"></h:commandButton>
+				</tr>
+			</table>
+		</h:form>
+	</h:body>
+
+</html>
